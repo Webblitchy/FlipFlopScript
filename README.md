@@ -11,12 +11,20 @@ With the FlipFlopScript (in reference to the "FlipFlopWheel" parameter you have 
 ## How to use
 - Download the script
 - Open PowerShell **As Administrator**
-- Drag and drop the file in PowerShell
-- OR Execute the line below :
+- Execute the line below (make sure the script is in Downloads):
 ```
-& "C:\Path_to_the_script\FlipFlopScript.ps1"
+& "$home\Downloads\FlipFlopScript.ps1"
 ```
 - Follow the instructions
+- Delete the script if you want
+
+## How it works
+The script is pretty simple:
+1. You choose the scroll direction
+2. By unplugging and replugging the mouse it detects its ID
+3. You have to make it for all the USB ports to be able to change the parameters for each one afterwards
+4. The script change the Registry Editor parameter (FlipFlopWheel) for all the USB port for your mouse
+5. Unplug and replug the mouse to see new changes
 
 ## Footnotes
 - You have to execute this script for each mouse you want to change
